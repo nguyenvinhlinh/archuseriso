@@ -4,3 +4,4 @@ archuseriso-*.tar.gz*
 *.pkg.tar.zst
 out/
 work/
+/keys/
