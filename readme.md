@@ -51,6 +51,7 @@ Pre-configured build profiles
 * Sway
 * Xfce
 * HashingOS
+
 Installation
 ------------
 
