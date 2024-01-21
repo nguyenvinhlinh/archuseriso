@@ -50,7 +50,7 @@ Pre-configured build profiles
 * Mate
 * Sway
 * Xfce
-
+* HashingOS
 Installation
 ------------
 
@@ -65,6 +65,21 @@ Alternative method using the git repository:
 The online built images on the download page http://dl.gnutux.fr/archuseriso include archuseriso. This allows building your disk image from the live medium without having to install archuseriso.
 
 Note that archuseriso was designed for Arch Linux and has not been tested on Arch Linux derivatives.
+
+Building HashingOS image
+------------------------
+```
+$ aui-mkiso archuseriso/profiles/hashing_os -v
+```
+
+Writing iso to usb and maximize copy-on-write(cow) space
+--------------------------------------------------------
+```
+$ aui-mkusb --size-cow=29G out/HashingOS-1.0.0-x64.iso /dev/sdb
+```
+
+
+
 
 Building an image
 -----------------
@@ -82,7 +97,7 @@ Using Kde Plasma profile, German language
 
       sudo aui-mkiso --language=de kde
 
-Using the Gnome profile, additional packages are added, user packages located in directory `mypackages` are also added (pre-built AUR packages): 
+Using the Gnome profile, additional packages are added, user packages located in directory `mypackages` are also added (pre-built AUR packages):
 
       sudo aui-mkiso --add-pkg=firefox-ublock-origin,ntop --pkg-dir=~/mypackages gnome
 
@@ -220,7 +235,7 @@ Note that Docker is out of the scope of this readme. You are supposed to know ho
 
 Limitations
 
-Building zfs packages from the docker container currently doesn't work. 
+Building zfs packages from the docker container currently doesn't work.
 
 Archuseriso Program List
 ------------------------
