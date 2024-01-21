@@ -1,12 +1,12 @@
 #!/usr/bin/env bash
 # shellcheck disable=SC2034
 
-iso_name="aui-console"
-iso_label="AUICO"
-iso_publisher=""
+iso_name="HashingOS"
+iso_label="HashingOS"
+iso_publisher="HashingOS"
 desktop="Console"
-iso_application="Archuseriso ${desktop} Live/Rescue medium"
-iso_version=""
+iso_application="HashingOS ${desktop} Live/Rescue medium"
+iso_version="1.0.0"
 install_dir="arch"
 buildmodes=('iso')
 bootmodes=('bios.syslinux.mbr'
